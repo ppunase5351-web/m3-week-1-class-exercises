@@ -1,0 +1,11 @@
+//- Component: one blog comment (repeated by Vue's v-for)
+mixin blogPost()
+  li#posts(v-for="post in posts")
+    span.profile
+      img(v-bind:src="post.profilepic", v-on:click="authorinfo(posts, post)")
+    span.author {{ post.name }}
+    | &nbsp;&mdash;&nbsp;
+    span.date {{ post.date }}
+    | &nbsp;
+    span.reply {{ post.reply }}
+    p {{ post.message }}

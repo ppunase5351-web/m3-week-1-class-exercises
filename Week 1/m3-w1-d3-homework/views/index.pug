@@ -1,0 +1,20 @@
+extends layout
+
+include components/blogpost
+include components/infobox
+
+block content
+  include includes/sidebars
+  #container
+    include includes/header
+    main
+      aside#photos
+        img(src="/images/chili.jpg", alt="White Chicken Chili", width="180")
+      h2
+        blogtitle
+      section#blogposts
+        ul
+          +blogPost
+          +infoBox
+    include includes/footer
+  script(src="/javascripts/vue.js")

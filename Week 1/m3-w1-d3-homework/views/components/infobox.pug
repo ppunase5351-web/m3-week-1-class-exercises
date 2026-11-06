@@ -1,0 +1,14 @@
+//- Component: author info pop-up box (shown by Vue's v-if)
+mixin infoBox()
+  #info_box(v-for="post in posts", v-if="post.thisBox")
+    p.closeBtn.closeBtnP(v-on:click="$emit('close', post.thisBox = false)") &#10006;
+    #info_title {{ post.name }}
+    #info_foodie
+      span Foodie Level:
+      | &nbsp;{{ post.foodielevel }}
+    #info_bio
+      span Bio:
+        br
+      | {{ post.bio }}
+    button.closeBtn.closeBtnB(v-on:click="$emit('close', post.thisBox = false)") Close
+    p#close_info
