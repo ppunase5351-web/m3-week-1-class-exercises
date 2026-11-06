@@ -1,0 +1,21 @@
+{
+  "name": "node-http",
+  "version": "1.0.0",
+  "description": "Node HTTP Module",
+  "homepage": "https://github.com/ppunase5351-web/m3-w1-d1-exercise#readme",
+  "bugs": {
+    "url": "https://github.com/ppunase5351-web/m3-w1-d1-exercise/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppunase5351-web/m3-w1-d1-exercise.git"
+  },
+  "license": "ISC",
+  "author": "Pradnyashree Punase",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "git repository, keywords",
+    "start":"node server"
+  }
+}
